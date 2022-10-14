@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Portfolio | Jufron Tamo Ama</title>
   <link rel="stylesheet" href="css/all-min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/hamburgers.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
 <body x-data="{ navbarShow : false }">
@@ -22,19 +23,19 @@
         class="flex justify-between md:justify-between" 
         x-data="{ hamburger : false, toggle : false, theme : '' }">
         <!-- brand -->
-        <a href="#" class="flex items-center px-4 py-5 text-xl font-bold transition duration-500 text-fuchsia-600 hover:text-fuchsia-800 hover:bg-fuchsia-100 rounded-xl dark:hover:bg-slate-600 dark:hover:text-fuchsia-500">Portfolio</a>
+        <a href="#" class="flex items-center px-4 py-5 text-xl font-bold transition duration-500 text-fuchsia-600 hover:text-fuchsia-800 hover:bg-fuchsia-100 rounded-xl dark:hover:bg-slate-600 dark:hover:text-fuchsia-500" data-aos="zoom-in" data-aos-duration="1000">Portfolio</a>
         <!-- end brand -->
         <div class="flex items-center justify-center">
           <div class="absolute w-56 transition duration-500 shadow-lg md:shadow-none md:bg-inherit right-4 md:w-full top-20 md:static bg-slate-200 rounded-xl md:rounded-none md:flex md:justify-between dark:bg-slate-800 dark:md:bg-inherit"
               :class=" hamburger ? '' : 'hidden' "
               @click.away="hamburger = false"
           >
-            <a href="#top" class="flex items-center px-4 py-5 transition duration-500 md:justify-center hover:text-fuchsia-600 hover:bg-fuchsia-100 rounded-xl dark:hover:bg-slate-700 dark:text-slate-200">Beranda</a>
-            <a href="#tentang" class="flex items-center px-4 py-5 transition duration-500 md:justify-center hover:text-fuchsia-600 hover:bg-fuchsia-100 rounded-xl dark:hover:bg-slate-700 dark:text-slate-200">Tentang</a>
-            <a href="#keahlian" class="flex items-center px-4 py-5 transition duration-500 md:justify-center hover:text-fuchsia-600 hover:bg-fuchsia-100 rounded-xl dark:hover:bg-slate-700 dark:text-slate-200">Keahlian</a>
-            <a href="#sertifikat" class="flex items-center px-4 py-5 transition duration-500 md:justify-center hover:text-fuchsia-600 hover:bg-fuchsia-100 rounded-xl dark:hover:bg-slate-700 dark:text-slate-200">Sertifikat</a>
-            <a href="#projek" class="flex items-center px-4 py-5 transition duration-500 md:justify-center hover:text-fuchsia-600 hover:bg-fuchsia-100 rounded-xl dark:hover:bg-slate-700 dark:text-slate-200">Projek</a>
-            <a href="#hubungi" class="flex items-center px-4 py-5 transition duration-500 md:justify-center hover:text-fuchsia-600 hover:bg-fuchsia-100 rounded-xl dark:hover:bg-slate-700 dark:text-slate-200">Hubungi</a>
+            <a href="#top" class="flex items-center px-4 py-5 transition duration-500 md:justify-center hover:text-fuchsia-600 hover:bg-fuchsia-100 rounded-xl dark:hover:bg-slate-700 dark:text-slate-200" data-aos="zoom-in" data-aos-duration="1000">Beranda</a>
+            <a href="#tentang" class="flex items-center px-4 py-5 transition duration-500 md:justify-center hover:text-fuchsia-600 hover:bg-fuchsia-100 rounded-xl dark:hover:bg-slate-700 dark:text-slate-200" data-aos="zoom-in" data-aos-duration="1000">Tentang</a>
+            <a href="#keahlian" class="flex items-center px-4 py-5 transition duration-500 md:justify-center hover:text-fuchsia-600 hover:bg-fuchsia-100 rounded-xl dark:hover:bg-slate-700 dark:text-slate-200" data-aos="zoom-in" data-aos-duration="1000">Keahlian</a>
+            <a href="#sertifikat" class="flex items-center px-4 py-5 transition duration-500 md:justify-center hover:text-fuchsia-600 hover:bg-fuchsia-100 rounded-xl dark:hover:bg-slate-700 dark:text-slate-200" data-aos="zoom-in" data-aos-duration="1000">Sertifikat</a>
+            <a href="#projek" class="flex items-center px-4 py-5 transition duration-500 md:justify-center hover:text-fuchsia-600 hover:bg-fuchsia-100 rounded-xl dark:hover:bg-slate-700 dark:text-slate-200" data-aos="zoom-in" data-aos-duration="1000">Projek</a>
+            <a href="#hubungi" class="flex items-center px-4 py-5 transition duration-500 md:justify-center hover:text-fuchsia-600 hover:bg-fuchsia-100 rounded-xl dark:hover:bg-slate-700 dark:text-slate-200" data-aos="zoom-in" data-aos-duration="1000">Hubungi</a>
           </div>
         </div>
         <div class="flex">
@@ -128,7 +129,7 @@
   <!-- section1 hero -->
   <div id="top" class="bg-gradient-to-tl from-rose-100/60 to-teal-100/40 dark:bg-gradient-to-r dark:from-gray-800 dark:via-gray-900 dark:to-gray-900">
     <div class="container flex flex-col px-4 m-auto pt-28 md:pt-10 lg:px-20 md:justify-between md:flex-row">
-      <div class="flex md:max-w-full">
+      <div class="flex md:max-w-full" data-aos="fade-right">
         <div class="sm:m-auto">
           <h3 class="text-xl sm:text-center md:text-left dark:text-slate-200"> 
             <span class="font-semibold text-fuchsia-600">Hallo</span>
@@ -152,7 +153,7 @@
           </div>
         </div>
       </div>
-      <div class="md:pt-10 sm:pt-0 md:max-w-xl lg:mr-20">
+      <div class="md:pt-10 sm:pt-0 md:max-w-xl lg:mr-20" data-aos="fade-left">
         <div class="m-auto mt-5 sm:w-96 sm:h-[400px] md:h-[550px] md:w-[380px]">
           <img class="object-cover w-full h-full bg-center" src="img/[removal.ai]_tmp-633aa61aee7f3.png" alt="image">
         </div>
@@ -164,13 +165,13 @@
   <!-- section2 tentang saya -->
   <div class="dark:bg-slate-900">
     <div id="tentang" class="container px-4 m-auto py-28 lg:px-20">
-      <h2 class="text-4xl font-semibold dark:text-slate-200">Tentang Diri</h2>
-      <hr class="h-1 mt-6 w-28 bg-fuchsia-600">
+      <h2 class="text-4xl font-semibold dark:text-slate-200" data-aos="fade-down" data-aos-duration="2000">Tentang Diri</h2>
+      <hr class="h-1 mt-6 w-28 bg-fuchsia-600" data-aos="fade-down" data-aos-duration="2000">
   
-      <div class="pt-[410px] md:pt-[175px] relative xl:w-[860px] xl:m-auto">
+      <div class="pt-[410px] md:pt-[175px] relative xl:w-[860px] xl:m-auto" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
         <div class="p-10 my-5 bg-fuchsia-100 rounded-3xl dark:bg-fuchsia-900">
           <div class="grid grid-cols-1 md:grid-cols-2">
-            <div class="w-[300px] md:ml-0 absolute top-0 md:top-0">
+            <div class="w-[300px] md:ml-0 absolute top-0 md:top-0" data-aos="zoom-in-down">
               <img class="object-cover w-full h-full mx-auto bg-center" src="img/[removal.ai]_tmp-633ae511b00f7.png" alt="">
             </div>
             <div class="md:col-start-2">
@@ -188,47 +189,47 @@
   <!-- section3 keahlian -->
   <div id="keahlian" class="bg-fixed bg-center bg-cover opacity-80" style="background-image: url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80.jpg');" >
     <div class="container px-4 py-24 m-auto lg:px-20 dark:brightness-100">
-      <h2 class="text-4xl font-semibold text-white dark:text-slate-200">Keahlian</h2>
-      <hr class="h-1 mt-6 bg-white w-28 dark:bg-slate-200">
+      <h2 class="text-4xl font-semibold text-white dark:text-slate-200" data-aos="fade-down" data-aos-duration="2000">Keahlian</h2>
+      <hr class="h-1 mt-6 bg-white w-28 dark:bg-slate-200" data-aos="fade-down" data-aos-duration="2000">
 
       <div class="mt-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:w-[53rem] md:w-[45rem] m-auto gap-3 md:gap-5">
-        <div class="flex flex-col py-7 md:py-10 text-html-color backdrop-blur-md rounded-2xl bg-white/70 dark:bg-slate-900/80">
+        <div class="flex flex-col py-7 md:py-10 text-html-color backdrop-blur-md rounded-2xl bg-white/70 dark:bg-slate-900/80" data-aos="fade-down" data-aos-duration="2000">
           <i class="m-auto fa-brands fa-html5 fa-3x lg:fa-4x"></i>
           <p class="m-auto">HTML</p>
         </div>
-        <div class="flex flex-col py-7 md:py-10 text-css-color backdrop-blur-md rounded-2xl bg-white/70 dark:bg-slate-900/80">
+        <div class="flex flex-col py-7 md:py-10 text-css-color backdrop-blur-md rounded-2xl bg-white/70 dark:bg-slate-900/80" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="100">
           <i class="m-auto fa-brands fa-css3-alt fa-3x"></i>
           <p class="m-auto">CSS</p>
         </div>
-        <div class="flex flex-col text-js-color py-7 md:py-10 backdrop-blur-md rounded-2xl bg-white/70 dark:bg-slate-900/80">
+        <div class="flex flex-col text-js-color py-7 md:py-10 backdrop-blur-md rounded-2xl bg-white/70 dark:bg-slate-900/80" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="200">
           <i class="m-auto fa-brands fa-square-js fa-3x"></i>
           <p class="m-auto">Javascript</p>
         </div>
-        <div class="flex flex-col text-nodejs-color py-7 md:py-10 backdrop-blur-md rounded-2xl bg-white/70 dark:bg-slate-900/80">
+        <div class="flex flex-col text-nodejs-color py-7 md:py-10 backdrop-blur-md rounded-2xl bg-white/70 dark:bg-slate-900/80" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="300">
           <i class="m-auto fa-brands fa-node-js fa-3x"></i>
           <p class="m-auto">Node Js</p>
         </div>
-        <div class="flex flex-col text-php-color py-7 md:py-10 backdrop-blur-md rounded-2xl bg-white/70 dark:bg-slate-900/80">
+        <div class="flex flex-col text-php-color py-7 md:py-10 backdrop-blur-md rounded-2xl bg-white/70 dark:bg-slate-900/80" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="400">
           <i class="m-auto fa-brands fa-php fa-3x"></i>
           <p class="m-auto">PHP</p>
         </div>
-        <div class="flex flex-col text-bootstrap-color py-7 md:py-10 backdrop-blur-md rounded-2xl bg-white/70 dark:bg-slate-900/80">
+        <div class="flex flex-col text-bootstrap-color py-7 md:py-10 backdrop-blur-md rounded-2xl bg-white/70 dark:bg-slate-900/80" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="500">
           <i class="m-auto fa-brands fa-bootstrap fa-3x"></i>
           <p class="m-auto">Bootstrap</p>
         </div>
-        <div class="flex flex-col text-white py-7 md:py-10 backdrop-blur-md rounded-2xl bg-white/70 dark:bg-slate-900/80">
+        <div class="flex flex-col text-white py-7 md:py-10 backdrop-blur-md rounded-2xl bg-white/70 dark:bg-slate-900/80" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="600">
           <img class="w-12 h-12 m-auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/600px-Tailwind_CSS_Logo.svg.png?20211001194333" alt="">
           <p class="m-auto text-sky-400">Tailwind CSS</p>
         </div>
-        <div class="flex flex-col text-reactjs-color py-7 md:py-10 backdrop-blur-md rounded-2xl bg-white/70 dark:bg-slate-900/80">
+        <div class="flex flex-col text-reactjs-color py-7 md:py-10 backdrop-blur-md rounded-2xl bg-white/70 dark:bg-slate-900/80" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="700">
           <i class="m-auto fa-brands fa-react fa-3x"></i>
           <p class="m-auto">React Js</p>
         </div>
-        <div class="flex flex-col text-laravel-color py-7 md:py-10 backdrop-blur-md rounded-2xl bg-white/70 dark:bg-slate-900/80">
+        <div class="flex flex-col text-laravel-color py-7 md:py-10 backdrop-blur-md rounded-2xl bg-white/70 dark:bg-slate-900/80" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="800">
           <i class="m-auto fa-brands fa-laravel fa-3x"></i>
           <p class="m-auto">Laravel</p>
         </div>
-        <div class="flex flex-col py-7 md:py-10 backdrop-blur-md rounded-2xl bg-white/70 dark:bg-slate-900/80">
+        <div class="flex flex-col py-7 md:py-10 backdrop-blur-md rounded-2xl bg-white/70 dark:bg-slate-900/80" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="900">
           <img class="m-auto " src="https://www.vectorlogo.zone/logos/mysql/mysql-ar21.svg" alt="">
           <p class="m-auto text-mysql-color">Mysql</p>
         </div>
@@ -240,17 +241,24 @@
   <!-- sertifikat 4 -->
   <div class="dark:bg-slate-900">
     <div id="sertifikat" x-data="{}" class="container px-4 py-24 m-auto lg:px-20">
-        <h2 class="text-4xl font-semibold dark:text-slate-200">sertifikat</h2>
-        <hr class="h-1 mt-6 w-28 bg-fuchsia-600">
+        <h2 class="text-4xl font-semibold dark:text-slate-200" data-aos="fade-down" data-aos-duration="2000">sertifikat</h2>
+        <hr class="h-1 mt-6 w-28 bg-fuchsia-600" data-aos="fade-down" data-aos-duration="2000">
         <div class="grid mt-20 gap-y-6 md:gap-y-0 md:gap-x-4 md:grid-cols-2">
           <a 
-          @click="$dispatch('img-modal', {  imgModalSrc: 'img/71967822.jpg' })"
-          class="overflow-hidden transition duration-500 shadow-lg cursor-pointer wounded-2xl hover:shadow-xl">
+            @click="$dispatch('img-modal', {  imgModalSrc: 'img/71967822.jpg' })"
+            data-aos="fade-down" 
+            data-aos-duration="3000"
+            class="overflow-hidden transition duration-500 shadow-lg cursor-pointer wounded-2xl hover:shadow-xl"
+          >
             <img class="w-full bg-center bg-cover dark:brightness-50" src="img/71967822.jpg" alt="">
           </a>
           <a
             @click="$dispatch('img-modal', {  imgModalSrc: 'img/09-05-28-UC-d287a9ee-e49f-4f7f-a1ca-eacd2c469a8d.jpg' })" 
-           class="overflow-hidden transition duration-500 shadow-lg cursor-pointer wounded-2xl hover:shadow-xl">
+            data-aos="fade-down" 
+            data-aos-duration="3000"
+            data-aos-delay="100"
+            class="overflow-hidden transition duration-500 shadow-lg cursor-pointer wounded-2xl hover:shadow-xl"
+          >
             <img class="w-full bg-center bg-cover dark:brightness-50 " src="img/09-05-28-UC-d287a9ee-e49f-4f7f-a1ca-eacd2c469a8d.jpg" alt="">
           </a>
         </div>
@@ -261,10 +269,10 @@
   <!-- section5 projek -->
   <div id="projek" class="bg-slate-100 dark:bg-slate-800">
     <div class="container px-4 py-24 m-auto lg:px-20">
-      <h2 class="text-4xl font-semibold dark:text-slate-200">Projek Saya</h2>
-      <hr class="h-1 mt-6 w-28 bg-fuchsia-600">
+      <h2 class="text-4xl font-semibold dark:text-slate-200" data-aos="fade-down" data-aos-duration="2000">Projek Saya</h2>
+      <hr class="h-1 mt-6 w-28 bg-fuchsia-600" data-aos="fade-down" data-aos-duration="2000">
       <div class="grid grid-cols-1 mt-20 gap-y-4 sm:gap-y-6 sm:gap-x-2 sm:grid-cols-2 md:gap-x-4 lg:gap-x-8 md:grid-cols-3">
-        <div class="overflow-hidden transition duration-500 bg-white border hover:shadow-md rounded-xl dark:bg-slate-900 dark:border-slate-700">
+        <div class="overflow-hidden transition duration-500 bg-white border hover:shadow-md rounded-xl dark:bg-slate-900 dark:border-slate-700" data-aos="fade-down" data-aos-duration="2000">
           <img class="rounded-xl dark:brightness-75" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="">
           <div class="flex justify-between">
             <h5 class="p-4 text-md dark:text-slate-200">Lorem ipsum dolor sit amet.</h5>
@@ -273,7 +281,7 @@
             </a>
           </div>
         </div>
-        <div class="overflow-hidden transition duration-500 bg-white border hover:shadow-md rounded-xl dark:bg-slate-900 dark:border-slate-700">
+        <div class="overflow-hidden transition duration-500 bg-white border hover:shadow-md rounded-xl dark:bg-slate-900 dark:border-slate-700" data-aos="fade-down" data-aos-duration="2000">
           <img class="rounded-xl dark:brightness-75" src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
           <div class="flex justify-between">
             <h5 class="p-4 text-md dark:text-slate-200">Lorem ipsum dolor sit amet.</h5>
@@ -282,7 +290,7 @@
             </a>
           </div>
         </div>
-        <div class="overflow-hidden transition duration-500 bg-white border hover:shadow-md rounded-xl dark:bg-slate-900 dark:border-slate-700">
+        <div class="overflow-hidden transition duration-500 bg-white border hover:shadow-md rounded-xl dark:bg-slate-900 dark:border-slate-700" data-aos="fade-down" data-aos-duration="2000">
           <img class="rounded-xl dark:brightness-75" src="https://images.unsplash.com/photo-1551419762-4a3d998f6292?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2dyYW1pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
           <div class="flex justify-between">
             <h5 class="p-4 text-md dark:text-slate-200">Lorem ipsum dolor sit amet.</h5>
@@ -291,7 +299,7 @@
             </a>
           </div>
         </div>
-        <div class="overflow-hidden transition duration-500 bg-white border hover:shadow-md rounded-xl dark:bg-slate-900 dark:border-slate-700">
+        <div class="overflow-hidden transition duration-500 bg-white border hover:shadow-md rounded-xl dark:bg-slate-900 dark:border-slate-700" data-aos="fade-down" data-aos-duration="2000">
           <img class="rounded-xl dark:brightness-75" src="https://images.unsplash.com/photo-1623479322729-28b25c16b011?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
           <div class="flex justify-between">
             <h5 class="p-4 text-md dark:text-slate-200">Lorem ipsum dolor sit amet.</h5>
@@ -300,7 +308,7 @@
             </a>
           </div>
         </div>
-        <div class="overflow-hidden transition duration-500 bg-white border hover:shadow-md rounded-xl dark:bg-slate-900 dark:border-slate-700">
+        <div class="overflow-hidden transition duration-500 bg-white border hover:shadow-md rounded-xl dark:bg-slate-900 dark:border-slate-700" data-aos="fade-down" data-aos-duration="2000">
           <img class="rounded-xl dark:brightness-75" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="">
           <div class="flex justify-between">
             <h5 class="p-4 text-md dark:text-slate-200">Lorem ipsum dolor sit amet.</h5>
@@ -309,7 +317,7 @@
             </a>
           </div>
         </div>
-        <div class="overflow-hidden transition duration-500 bg-white border hover:shadow-md rounded-xl dark:bg-slate-900 dark:border-slate-700">
+        <div class="overflow-hidden transition duration-500 bg-white border hover:shadow-md rounded-xl dark:bg-slate-900 dark:border-slate-700" data-aos="fade-down" data-aos-duration="2000">
           <img class="rounded-xl dark:brightness-75" src="https://images.unsplash.com/photo-1618388810903-840bb0d15ea5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
           <div class="flex justify-between">
             <h5 class="p-4 text-md dark:text-slate-200">Lorem ipsum dolor sit amet.</h5>
@@ -326,18 +334,18 @@
   <!-- section6 Hubungi -->
   <div class="dark:bg-slate-900">
     <div id="hubungi" class="container px-4 py-24 m-auto lg:px-20">
-        <h2 class="text-4xl font-semibold dark:text-slate-200">Hubungi</h2>
-        <hr class="h-1 mt-6 w-28 bg-fuchsia-600">
+        <h2 class="text-4xl font-semibold dark:text-slate-200" data-aos="fade-down" data-aos-duration="2000">Hubungi</h2>
+        <hr class="h-1 mt-6 w-28 bg-fuchsia-600" data-aos="fade-down" data-aos-duration="2000">
         <div class="m-auto mt-20 md:w-3/5">
           <form action="">
-            <label class="block w-full mb-3 text-xl dark:text-slate-200" for="email">Email</label>
-            <input class="block w-full transition duration-500 rounded-lg border-fuchsia-400 focus:outline-none focus:ring focus:ring-fuchsia-600 dark:bg-slate-800" type="email" id="email">
+            <label class="block w-full mb-3 text-xl dark:text-slate-200" for="email" data-aos="zoom-out-right" data-aos-duration="2000">Email</label>
+            <input class="block w-full transition duration-500 rounded-lg border-fuchsia-400 focus:outline-none focus:ring focus:ring-fuchsia-600 dark:bg-slate-800" type="email" id="email" data-aos="fade-down" data-aos-duration="2000">
   
-            <label class="block w-full mt-5 mb-3 text-xl dark:text-slate-200" for="subject">Subjek</label>
-            <input class="block w-full transition duration-500 rounded-lg border-fuchsia-400 focus:outline-none focus:ring focus:ring-fuchsia-600 dark:bg-slate-800" type="text" id="subjext">
+            <label class="block w-full mt-5 mb-3 text-xl dark:text-slate-200" for="subject" data-aos="zoom-out-right" data-aos-duration="2000" data-aos-delay="200">Subjek</label>
+            <input class="block w-full transition duration-500 rounded-lg border-fuchsia-400 focus:outline-none focus:ring focus:ring-fuchsia-600 dark:bg-slate-800" type="text" id="subjext" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="200">
   
-            <label class="block w-full mt-5 mb-3 text-xl dark:text-slate-200" for="pesan">Pesan</label>
-            <textarea class="block w-full transition duration-500 rounded-lg border-fuchsia-400 foucs:outline-none foucs:ring focus:ring-fuchsia-600 dark:bg-slate-800" name="pesan" id="pesan" cols="30" rows="6"></textarea>
+            <label class="block w-full mt-5 mb-3 text-xl dark:text-slate-200" for="pesan" data-aos="zoom-out-right" data-aos-duration="2000" data-aos-delay="400">Pesan</label>
+            <textarea class="block w-full transition duration-500 rounded-lg border-fuchsia-400 foucs:outline-none foucs:ring focus:ring-fuchsia-600 dark:bg-slate-800" name="pesan" id="pesan" cols="30" rows="6" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="400"></textarea>
           </form>
         </div>
     </div>
@@ -348,7 +356,7 @@
   <div class="bg-slate-900 text-slate-300">
     <div class="container px-4 pb-8 m-auto pt-14 lg:px-20">
       <div class="grid gap-y-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        <div class="px-2">
+        <div class="px-2" data-aos="fade-down" data-aos-duration="2000">
           <h3 class="text-xl font-semibold">Link</h3>
           <hr class="h-1 mt-4 mb-4 w-28 bg-fuchsia-600">
           <a class="block mb-3 transition duration-500 hover:text-fuchsia-600" href="#top">Beranda</a>
@@ -358,21 +366,21 @@
           <a class="block mb-3 transition duration-500 hover:text-fuchsia-600" href="#projek">Projek</a>
         </div>
 
-        <div class="px-2">
+        <div class="px-2" data-aos="fade-down" data-aos-duration="2000">
           <h4 class="text-xl font-semibold">Alamat</h4>
           <hr class="h-1 mt-4 mb-4 w-28 bg-fuchsia-600">
           <p class="mb-3">Jalur 40 Kupang</p>
           <p class="mb-3">indonesia</p>
         </div>
 
-        <div class="px-2">
+        <div class="px-2" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="200">
           <h3 class="text-xl font-semibold">Kontak</h3>
           <hr class="h-1 mt-4 mb-4 w-28 bg-fuchsia-600">
           <a class="block mb-3" target="_blank" href="https://wa.me/+6282147554549?text=">+62 8214 7554 549</a>
           <a class="block mb-3" target="_blank" href="mailto:jufrontamoama@gmail.com">jufrontamoama@gmail.com</a>
         </div>
 
-        <div class="px-2">
+        <div class="px-2" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="400">
           <h3 class="text-xl font-semibold">Social Media</h3>
           <hr class="h-1 mt-4 mb-4 w-28 bg-fuchsia-600">
 
@@ -448,7 +456,10 @@
   <!--end modal lightbox -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
   <script>
+    AOS.init();
 
     const scrollTop = document.querySelector('#scrollTop');
     scrollTop.addEventListener('click', () => {
